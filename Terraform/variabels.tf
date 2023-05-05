@@ -20,6 +20,11 @@ variable "private_subnet_cidr_block" {
 }
 
 variable "cluster_name" {
-  type = string
+  type        = string
   description = "the name of our eks cluster"
+}
+
+variable "cluster_version" {
+  type        = string
+  description = "the version of our k8s cluster"
 }
