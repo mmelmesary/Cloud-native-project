@@ -1,6 +1,6 @@
 # Use Terraform to deploy our apllication on a EKS cluster
 <p align="center">
-<img src="../images/eks-terraform.avif" width="400" alt="EKS BY Terraform" />
+<img src="../images/eks-terraform.svg" width="500" alt="EKS BY Terraform" />
 </p>
 
 ## Deploy the sample application
