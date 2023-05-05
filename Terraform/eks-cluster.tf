@@ -1,11 +1,3 @@
-data "aws_eks_cluster" "saurus" {
-   name = module.eks.cluster_id
-}
-data "aws_eks_cluster_auth" "saurus-auth" {
- name = module.eks.cluster_id
-}
-
-
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
   version = "19.13.1"

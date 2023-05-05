@@ -1,9 +1,14 @@
-# Use Terraform to deploy our apllication on a EKS cluster
+# Use Terraform to create our EKS cluster
 <p align="center">
 <img src="../images/eks-terraform.svg" width="500" alt="EKS BY Terraform" />
 </p>
 
-## Deploy the sample application
+## Prerequisites
+- [x] AWS Account
+- [x] Proper Permissions for your user
+- [X] Terraform installed on your IDE
+- [X] AWS CLI installed and configured on your IDE
+## Deploy the terraform code
 
 1. Clone the Github repository.
 
