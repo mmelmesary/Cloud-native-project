@@ -34,7 +34,7 @@ kubectl get pods -n monitoring
   ```
 ![prometheus](../images/grafana-dashboard.png)    
 
-## Step2: Creating custom roles 
+## Step2: Creating custom roles 🚨
 
 To monitor changes in our Kubernetes cluster and receive alerts through Slack, we will create custom rules using Prometheus and Alertmanager. 
 

@@ -21,7 +21,7 @@ kubectl apply -f ./monitoring/notifications/alert-secret.yaml
 kubectl run cpu-test --image containerstack/cpustress -- --cpu 4 --timeout 30s --metrics-brief 
 ```
 ___
-**Congratulations** :tada: , our alert sucessfully get sent to our slack channel :tada:
+**✨ Contents**, our alert sucessfully get sent to our slack channel :tada:
 
 ![slack-notifications](../../images/slack-notifications.PNG) 
 
