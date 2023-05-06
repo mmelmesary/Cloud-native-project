@@ -2,7 +2,8 @@
 > setting up Prometheus Alertmanager to send notifications to a slack channel 
 
 **We will configure alertmanager to send notifications if:**
-- If any instacnce has more cpu than 50%
+- If any instacnce has more cpu than 75%
+- If any container consumes memory more than 2 GB
 - If any node goes down
 - If any pod restarts more than 4 times
 - If redis service goes down
