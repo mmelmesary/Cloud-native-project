@@ -16,7 +16,7 @@
 **Install ArgoCD CLI**
 > You can download the latest Argo CD version from **[the latest release page of this repository](https://github.com/argoproj/argo-cd/releases/tag/v2.7.1)**, which will include the argocd CLI
 
-## Step 2 Configuring ArgoCD:
+## Step 2: Configuring ArgoCD:
  
   ```bash
   kubectl port-forward svc/argocd-server -n argocd 8080:443
@@ -32,7 +32,7 @@ This secret where the argocd server password is stored is not secure and should 
   argocd account update-password
   ```
 
-## step 3 Declarative Setup - App-of-Apps
+## step 3: Declarative Setup - App-of-Apps
 > To deploy our apps, we will use the declarative setup approach with an "App-of-Apps" configuration. This approach allows us to manage multiple applications as a single entity, which simplifies the deployment process and makes it easier to maintain and scale.
 
 To deploy the App-of-Apps configuration, run the following command:
