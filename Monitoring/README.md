@@ -22,6 +22,7 @@ kubectl get pods -n monitoring
   ```bash
   kubectl -n monitoring port-forward svc/monitoring-kube-prometheus-prometheus  9090:9090
   ```
+  ![prometheus](../images/Prometheus.PNG)    
 ### To access the grafana UI
   ```bash
   kubectl -n monitoring port-forward svc/monitoring-grafana 3000:80
@@ -32,3 +33,4 @@ kubectl get pods -n monitoring
   kubectl get secret -n monitoring monitoring-grafana -o=jsonpath='{.data.admin-user}' | base64 -d
   kubectl get secret -n monitoring monitoring-grafana -o=jsonpath='{.data.admin-password}' | base64 -d
   ```
+![prometheus](../images/grafana-dashboard.png)    
