@@ -26,9 +26,9 @@ kubectl get pods -n monitoring
   ```bash
   kubectl -n monitoring port-forward svc/monitoring-grafana 3000:80
   ```
-**We must get our credentials to login.**
+- **We must get our credentials to login.**
 
-```bash
-kubectl get secret -n monitoring monitoring-grafana -o=jsonpath='{.data.admin-user}' | base64 -d
-kubectl get secret -n monitoring monitoring-grafana -o=jsonpath='{.data.admin-password}' | base64 -d
-```
+  ```bash
+  kubectl get secret -n monitoring monitoring-grafana -o=jsonpath='{.data.admin-user}' | base64 -d
+  kubectl get secret -n monitoring monitoring-grafana -o=jsonpath='{.data.admin-password}' | base64 -d
+  ```

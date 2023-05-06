@@ -9,4 +9,4 @@
 ![Architecture ofmicroservices](../images/app-architecture.png)
 
 #### Copyright 2018 Google LLC
-> **Referance: https://github.com/mmelmesary/microservices-demo.git**
+> **Referance: https://github.com/GoogleCloudPlatform/microservices-demo.git**
