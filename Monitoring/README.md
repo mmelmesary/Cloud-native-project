@@ -21,8 +21,7 @@ kubectl get pods -n monitoring
 #### To access the prometheus UI
   ```bash
   kubectl -n monitoring port-forward svc/monitoring-kube-prometheus-prometheus  9090:9090
-  ```
-  ![prometheus](../images/Prometheus.PNG)    
+  ``` 
 #### To access the grafana UI
   ```bash
   kubectl -n monitoring port-forward svc/monitoring-grafana 3000:80
@@ -52,5 +51,5 @@ The rules in the file rules.yaml which we applied in the command above define `f
 kubectl apply -f ./monitoring/redis-rules.yaml
 ```
 The rule in the file redis-rules.yaml which we applied in the command above define if the redis instance goes down, immediately firing the alert
-
+____
 ![prometheus](../images/Prometheus.PNG)   
