@@ -53,4 +53,5 @@ kubectl apply -f ./monitoring/redis-rules.yaml
 The rule in the file redis-rules.yaml which we applied in the command above define if the redis instance goes down, immediately firing the alert
 ____
 **Prometheus alerts in prometheus UI**
+
 ![prometheus](../images/Prometheus.PNG)   
