@@ -19,4 +19,13 @@ kubectl apply -f ./monitoring/notifications/alert-secret.yaml
 ```bash
 kubectl run cpu-test --image containerstack/cpustress -- --cpu 4 --timeout 30s --metrics-brief 
 ```
+___
+**Congratulations** :tada: , our alert sucessfully get sent to our slack channel :tada:
+
 ![slack-notifications](../../images/slack-notifications.PNG) 
+
+#### Don't forget to delete the pod that we used to fire the alert to confirm that our alert works successfully
+
+```bash
+kubectl delete pod cpu-test
+```
