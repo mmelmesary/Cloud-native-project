@@ -1,0 +1,28 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: redis-exporter
+spec:
+  project: default
+  destination:
+    namespace: monitoring
+    server: 'https://kubernetes.default.svc'
+  source:
+    repoURL: 'https://prometheus-community.github.io/helm-charts'
+    targetRevision: 5.3.2
+    chart: prometheus-redis-exporter
+    helm:
+      parameters:
+        - name: serviceMonitor.enabled
+          value: 'true'
+        - name: redisAddress
+          value: 'redis://redis-cart.app-system:6379'
+        - name: serviceMonitor.labels.release
+          value: 'monitoring'
+           
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

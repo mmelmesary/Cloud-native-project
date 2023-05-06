@@ -10,8 +10,18 @@ spec:
   groups:
   - name: main.rules
     rules:
+    - alert: HighMemoryUsage
+      expr:  sum(container_memory_working_set_bytes{container_name!="POD"}) by (namespace, pod) > 2e+09
+      for: 1m
+      labels:
+        severity: warning
+        namespace: monitoring
+      annotations:
+        summary: "High memory usage detected in {{ $labels.namespace }}/{{ $labels.pod }}"
+        description: "The memory usage for container {{ $labels.container }} in pod {{ $labels.namespace }}/{{ $labels.pod }} has been above 1G for the last minute."
+      
     - alert: HostHighCpuLoad
-      expr: 100 - (avg by(instance) (rate(node_cpu_seconds_total{mode="idle"}[2m])) * 100) > 50
+      expr: 100 - (avg by(instance) (rate(node_cpu_seconds_total{mode="idle"}[2m])) * 100) > 75
       for: 2m
       labels:
         severity: warning

@@ -21,6 +21,9 @@ spec:
     - matchers:
       - name: alertname
         value: InstanceDown
+    - matchers:
+      - name: alertname
+        value: RedisDown
   receivers:
   - name: 'slack-notifications'
     slackConfigs:
