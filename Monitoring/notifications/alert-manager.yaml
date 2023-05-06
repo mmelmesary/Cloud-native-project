@@ -18,6 +18,9 @@ spec:
       - name: alertname
         value: KubernetesPodCrashLooping
       repeatInterval: 10m
+    - matchers:
+      - name: alertname
+        value: InstanceDown
   receivers:
   - name: 'slack-notifications'
     slackConfigs:
