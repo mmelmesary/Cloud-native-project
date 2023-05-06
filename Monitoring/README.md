@@ -1,6 +1,6 @@
 # Use Prometheus for monitoring and grafana for virtualiztion
 
-![prometheus](../images/prometheus-logo.svg) ![Grafana](../images/grafana-logo.png)
+![prometheus](../images/prometheus-logo.svg)           ![Grafana](../images/grafana-logo.png)
 
 We use ArgoCD to deploy our prometheus stack, you can see the application file from **[kube-prometheus-stack](https://github.com/mmelmesary/DevOps-Project/blob/master/ArgoCD/app-of-apps/prometheus-stack.yaml)** in ArgoCD directory.
 
