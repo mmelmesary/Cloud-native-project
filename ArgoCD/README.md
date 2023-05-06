@@ -1,11 +1,13 @@
-# Continuous Delivery with EKS and ArgoCD
+# Deploying Apps with ArgoCD
 
+## Overview
+> This repository contains configuration files for deploying multiple applications to a Kubernetes cluster using ArgoCD, a tool for continuous delivery of Kubernetes applications.
 ## Step 1: Install ArgoCD and ArgoCD CLI tool
 
  **We first need to create a namespace for ArgoCD and install it.**
   ```bash
-  kubectl create ns argocd
-  kubectl apply -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.4.7/manifests/install.yaml -n argocd
+  kubectl create namespace argocd
+  kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
   ```
 **Check all resources get installed** 
   ```bash
@@ -29,9 +31,14 @@ This secret where the argocd server password is stored is not secure and should 
   ```bash
   argocd account update-password
   ```
-we will use the declarative way to deploy our CRD app in k8s
+
+## step 3 Declarative Setup - App-of-Apps
+> To deploy our apps, we will use the declarative setup approach with an "App-of-Apps" configuration. This approach allows us to manage multiple applications as a single entity, which simplifies the deployment process and makes it easier to maintain and scale.
+
+To deploy the App-of-Apps configuration, run the following command:
 
 ```bash
-kubectl apply -f ArgoCD/application.yaml
+kubectl apply -f ArgoCD/multi-app/app-of-apps.yaml
 ```
+when we run the command above this will creates all apps in the app-of-apps directory
 

@@ -8,14 +8,14 @@ spec:
   source:
     repoURL: https://github.com/mmelmesary/DevOps-Project.git
     targetRevision: HEAD
-    path: kubernetes
+    path: ArgoCD/app-of-apps
   destination:
     server: https://kubernetes.default.svc
     namespace: default
   
   syncPolicy:
     syncOptions:
-    - createNamespace: true
+    - createNamespace=true
     automated:
       selfHeal: true
       prune: true
