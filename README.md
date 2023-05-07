@@ -5,7 +5,7 @@ ______
 
 ## Use Terraform to provision an EKS cluster
 
-The [`/terraform`](./Terraform) directory contains instructions for using [Terraform](https://www.terraform.io/intro) 
+The [`terraform`](./Terraform) directory contains instructions for using [Terraform](https://www.terraform.io/intro) 
 
 ## Use Prometheus for monitoring and grafana for virtualiztion
 
