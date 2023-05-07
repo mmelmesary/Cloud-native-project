@@ -42,3 +42,5 @@ kubectl apply -f ArgoCD/multi-app/app-of-apps.yaml
 ```
 when we run the command above this will creates all apps in the app-of-apps directory
 
+![argocd](../images/agocd-dashboard.png) 
+

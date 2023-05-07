@@ -13,4 +13,4 @@
 ```
 Dashboard ID = 14584
 ```
-![argocd](../../images/ArgoCD-dashboard.PNG) 
+![argocd](../../images/grafana-argocd-dashboard.png) 
