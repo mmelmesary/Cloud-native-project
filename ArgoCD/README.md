@@ -1,4 +1,4 @@
-# Deploying Apps with ArgoCD
+# ArgoCD for GitOps automation 
 
 ## Overview
 > This repository contains configuration files for deploying multiple applications to a Kubernetes cluster using ArgoCD, a tool for continuous delivery of Kubernetes applications.
