@@ -1,7 +1,7 @@
 # Use Prometheus for monitoring and grafana for virtualiztion
 
 <p float="left">
-  <img src="../images/prometheus-logo.svg" width="45%" />
+  <img src="../images/prometheus-logo.svg" width="10%" />
   <img src="../images/grafana-logo.png" width="45%" /> 
 </p>
 
