@@ -44,3 +44,7 @@ when we run the command above this will creates all apps in the app-of-apps dire
 
 ![argocd](../images/agocd-dashboard.png) 
 
+_____
+
+![argocd](../images/app-of-apps-dashboard.PNG) 
+
