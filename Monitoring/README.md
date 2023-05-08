@@ -1,9 +1,9 @@
 # Use Prometheus for monitoring and grafana for virtualiztion
 
-<p float="left">
-  <img src="../images/prometheus-logo.svg" width="10%" />
-  <img src="../images/grafana-logo.png" width="45%" /> 
-</p>
+<div style="display:flex; justify-content:space-between; align-items:center;">
+  <img src="../images/prometheus-logo.svg" alt="Prometheus" style="width:45%;">
+  <img src="../images/grafana-logo.png" alt="Grafana" style="width:45%;">
+</div>
 
 **we utilize ArgoCD as the deployment tool for our Prometheus stack. This is achieved by utilizing the Helm chart implementation.** you can see the application file from **[kube-prometheus-stack](https://github.com/mmelmesary/DevOps-Project/blob/master/ArgoCD/app-of-apps/prometheus-stack.yaml)** in ArgoCD directory.
 
