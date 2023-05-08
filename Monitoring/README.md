@@ -4,7 +4,7 @@
   <img src="../images/prometheus-logo.svg"  />           
 </p>
 
-<p float="write">
+<p float="right">
   <img src="../images/grafana-logo.png" width="45%" /> 
 </p>
 
