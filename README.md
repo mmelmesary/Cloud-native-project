@@ -27,6 +27,8 @@ This repository contains code for my DevOps project, which utilizes multiple too
 - [K8s-manifest](./kubernetes/README.md)
 - [Kubeseal]()
 
+[![Work in Progress](https://img.shields.io/badge/status-work%20in%20progress-yellow)](https://example.com)
+
 
 Thank you for exploring my project!
 
