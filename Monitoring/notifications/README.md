@@ -12,7 +12,7 @@
 
 If you want to receive notifications via Slack, you should be part of a Slack workspace.
 
-To set up alerting in your Slack workspace, you are going to need a `Slack API URL`. Go to **Slack -> Administration -> Manage apps**, search for `**Incoming WebHooks**` and add it to your Slack workspace.
+To set up alerting in your Slack workspace, you are going to need a `Slack API URL`. Go to **Slack -> Administration -> Manage apps**, search for `Incoming WebHooks` and add it to your Slack workspace.
 
 After you confirm and add Incoming WebHooks integration, webhook URL (which is your Slack API URL) is displayed. Copy it.
 
