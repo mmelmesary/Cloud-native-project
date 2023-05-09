@@ -1,4 +1,4 @@
- # DevOps Project 
+ [![Work in Progress](https://img.shields.io/badge/status-work%20in%20progress-yellow)](https://example.com)
 
 - **Our project is a cloud-native microservices-based application that is designed to run on Amazon Web Services (AWS) using Elastic Kubernetes Service (EKS). We use Terraform to manage our infrastructure as code, Istio to provide advanced traffic management and security features for our microservices, Prometheus and Grafana to monitor our distributed systems, and ArgoCD to manage our continuous delivery pipelines. By using these cloud-native technologies, we can take full advantage of the scalability, resilience, and elasticity of the cloud.**
 ______
@@ -27,7 +27,6 @@ This repository contains code for my DevOps project, which utilizes multiple too
 - [K8s-manifest](./kubernetes/README.md)
 - [Kubeseal]()
 
-[![Work in Progress](https://img.shields.io/badge/status-work%20in%20progress-yellow)](https://example.com)
 
 
 Thank you for exploring my project!
