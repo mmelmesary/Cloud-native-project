@@ -1,6 +1,6 @@
 # Autoscaling Kubernetes apps with Prometheus, Istio, and KEDA
 
-What follows is a step-by-step guide on configuring the KEDA Scaledobject to get the total HTTP requests from istio service mesh and using the prometheus to scrape those metrics.
+What follows is a step-by-step guide on configuring the KEDA ScaledObject to get the total HTTP requests from istio service mesh and using the prometheus to scrape those metrics.
 
 Prometheus scaler in KEDA is configured and deployed to auto-scale.
 
