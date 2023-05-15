@@ -2,7 +2,7 @@ apiVersion: keda.sh/v1alpha1
 kind: ScaledObject
 metadata:
   name: scaledobject-nginx
-  namespace: default
+  namespace: app-system
 spec:
   scaleTargetRef:
     apiVersion:    apps/v1            # Optional. Default: apps/v1
