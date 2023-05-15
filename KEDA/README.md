@@ -5,7 +5,9 @@ What follows is a step-by-step guide on configuring the KEDA Scaledobject to get
 Prometheus scaler in KEDA is configured and deployed to auto-scale.
 
 > Autoscaling is an approach to automatically scale up or down workloads based on the resource usage.
+
 ![keda](../images/keda.PNG) 
+
 ## First: install KEDA
 
 We will deploy Keda using Helm provided by ArgoCD
