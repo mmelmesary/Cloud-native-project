@@ -1,0 +1,28 @@
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+metadata:
+  name: scaledobject-nginx
+  namespace: default
+spec:
+  scaleTargetRef:
+    apiVersion:    apps/v1            # Optional. Default: apps/v1
+    kind:          Deployment         # Optional. Default: Deployment
+    name:          frontend       # Mandatory. Must be in the same namespace as the ScaledObject
+    #envSourceContainerName: {container-name}         # Optional. Default: .spec.template.spec.containers[0]
+  pollingInterval:  30                               # Optional. Default: 30 seconds
+  cooldownPeriod:   300                              # Optional. Default: 300 seconds
+  minReplicaCount:  2                               # Optional. Default: 0
+  maxReplicaCount:  10                              # Optional. Default: 100                        
+  triggers:
+  - type: prometheus
+    metadata:
+      # Required
+      serverAddress: http://monitoring-kube-prometheus-prometheus.monitoring.svc.cluster.local:9090
+      metricName: http_requests_total
+      threshold: '200'
+      query: sum(istio_requests_total{destination_app="frontend"})
+  scaleTargetRef:
+    apiVersion:    apps/v1  # Optional. Default: apps/v1
+    kind:          Deployment       # Optional. Default: Deployment
+    name:          frontend      # Mandatory. Must be in the same namespace as the ScaledObject
+    
