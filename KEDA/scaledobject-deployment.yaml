@@ -16,7 +16,7 @@ spec:
   triggers:
   - type: prometheus
     metadata:
-      serverAddress: http://monitoring-kube-prometheus-prometheus.istio-system.svc.cluster.local:9090
+      serverAddress: http://prometheus.istio-system.svc.cluster.local:9090
       metricName: http_requests_total
       threshold: '0.5'
       query: sum(rate(istio_requests_total{destination_workload="frontend",destination_workload_namespace="app-system"}[1m]))
