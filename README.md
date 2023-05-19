@@ -17,6 +17,10 @@ The [`Monitoring`](./Monitoring) directory contains instructions for using prome
 
 The [`ArgoCD`](./ArgoCD) directory contains instructions for using ArgoCD
 
+## Use KEDA to autosacle our application
+
+The [`KEDA`](./KEDA/) directory contains instructions for using it.
+
 
 
 This repository contains code for my DevOps project, which utilizes multiple tools to achieve a variety of tasks. To learn more about each tool and how it contributes to the project, please see the README file in each directory:
@@ -27,6 +31,7 @@ This repository contains code for my DevOps project, which utilizes multiple too
 - [Notifications](./Monitoring/notifications/README.md)
 - [Istio](./Istio%20manifests/README.md)
 - [K8s-manifest](./kubernetes/README.md)
+- [KEDA](./KEDA/README.md)
 - [Kubeseal]()
 
 
