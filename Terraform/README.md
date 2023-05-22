@@ -45,10 +45,10 @@
     Note: This step can take about 10 minutes. Do not interrupt the process.
 
 1. Update your kubeconfig file 
-
-```bash
-  aws eks update-kubeconfig --name saurus --region us-east-1
-```
+  
+    ```bash
+    aws eks update-kubeconfig --name saurus --region us-east-1
+    ```
 
 ## Clean up
 
