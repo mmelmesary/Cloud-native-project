@@ -1,3 +1,1 @@
-.alert-secret.yaml
-.sealedSecret.crt
-*.sealedSecret.yaml*
+alert-secret.yaml
