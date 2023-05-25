@@ -20,8 +20,5 @@ spec:
       metricName: http_requests_total
       threshold: '0.5'
       query: sum(rate(istio_requests_total{destination_workload="frontend",destination_workload_namespace="app-system"}[1m]))
-  scaleTargetRef:
-    apiVersion:    apps/v1  # Optional. Default: apps/v1
-    kind:          Deployment       # Optional. Default: Deployment
-    name:          frontend      # Mandatory. Must be in the same namespace as the ScaledObject
+ 
     
