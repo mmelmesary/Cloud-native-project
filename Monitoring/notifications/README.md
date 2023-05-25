@@ -8,7 +8,7 @@
 - If any pod restarts more than 4 times
 - If redis service goes down
 
-## Step1: 
+### Step1: 
 
 If you want to receive notifications via Slack, you should be part of a Slack workspace.
 
@@ -17,12 +17,17 @@ To set up alerting in your Slack workspace, you are going to need a `Slack API U
 After you confirm and add Incoming WebHooks integration, webhook URL (which is your Slack API URL) is displayed. Copy it.
 
 
-## Step 2:
+### Step 2:
+
+**Install bitanmi sealed-secet** to encrypt our secret file, so no one can decrypt our secet unless the kubeseal installed in our cluster
+
+> We install bitnami sealed-secret using ArgoCD, you can see the application file from **[sealed-secret.yaml](../../ArgoCD/app-of-apps/sealed-secret.yaml)** in ArgoCD directory.
+
 **Create these two files**
 
 ```bash
 kubectl apply -f ./monitoring/notifications/alert-manager.yaml
-kubectl apply -f ./monitoring/notifications/alert-secret.yaml
+kubectl apply -f ./monitoring/notifications/alert-sealed-secret.yaml
 ```
 
 ### You can test that the alertmanager works correctly 

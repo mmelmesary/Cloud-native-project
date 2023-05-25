@@ -2,7 +2,7 @@
 
 ![prometheus](../images/prometheus-logo.svg)           ![Grafana](../images/grafana-logo.png)
 
-**we utilize ArgoCD as the deployment tool for our Prometheus stack. This is achieved by utilizing the Helm chart implementation.** you can see the application file from **[kube-prometheus-stack](https://github.com/mmelmesary/DevOps-Project/blob/master/ArgoCD/app-of-apps/prometheus-stack.yaml)** in ArgoCD directory.
+**we utilize ArgoCD as the deployment tool for our Prometheus stack. This is achieved by utilizing the Helm chart implementation.** you can see the application file from **[kube-prometheus-stack](../ArgoCD/app-of-apps/prometheus-stack.yaml)** in ArgoCD directory.
 
 #### By default, this chart will deploy the following components:
 - Prometheus server
