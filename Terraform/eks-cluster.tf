@@ -1,7 +1,9 @@
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
   version = "19.13.1"
-
+  cluster_addons = { coredns = { most_recent = true } 
+  kube-proxy = { most_recent = true } 
+  vpc-cni = { most_recent = true } }
   cluster_name                   = var.cluster_name
   cluster_version                = var.cluster_version
   vpc_id                         = module.vpc.vpc_id
