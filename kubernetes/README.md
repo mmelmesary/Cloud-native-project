@@ -10,3 +10,16 @@
 
 #### Copyright 2018 Google LLC
 > **Referance: https://github.com/GoogleCloudPlatform/microservices-demo.git**
+
+## deploying our app
+
+**we utilize ArgoCD as the deployment tool for our app.** you can see the application file from **[shopping-website](../ArgoCD/app-of-apps/shopping-website.yaml)** in ArgoCD directory.
+
+**Access the application using frontend-external service `loadbalancer`**
+
+    ```bash
+    kubectl get svc frontend-external -o jsonpath="{.status.loadBalancer.ingress[0].hostname}"
+    ```
+
+![application-screnshot](../images/app-screenshot.png) 
+![application-screnshot](../images/app-screenshot-2.png) 
