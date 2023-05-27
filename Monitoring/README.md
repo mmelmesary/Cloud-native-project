@@ -23,6 +23,7 @@ kubectl get pods -n monitoring
   kubectl -n monitoring port-forward svc/monitoring-kube-prometheus-prometheus  9090:9090
   ``` 
 #### To access the grafana UI
+
   ```bash
   kubectl -n monitoring port-forward svc/monitoring-grafana 3000:80
   ```
