@@ -17,9 +17,9 @@
 
 **Access the application using frontend-external service `loadbalancer`**
 
-    ```bash
-    kubectl get svc frontend-external -o jsonpath="{.status.loadBalancer.ingress[0].hostname}"
-    ```
+```bash
+kubectl get svc frontend-external -o jsonpath="{.status.loadBalancer.ingress[0].hostname}"
+```
 
 ![application-screnshot](../images/app-screenshot-1.png) 
 ![application-screnshot](../images/app-screenshot-2.png) 
