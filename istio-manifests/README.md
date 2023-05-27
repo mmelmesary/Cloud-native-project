@@ -2,7 +2,7 @@
 
 This directory provides an `istio-manifests` files containing ingress resources (an Istio Gateway and VirtualService) needed to expose the app frontend running inside a Kubernetes cluster
 
-> I recomended follow the ![`istio`](https://istio.io/latest/docs/setup/getting-started/) documentation and follow the guide step by step
+> I recomended follow the [`istio`](https://istio.io/latest/docs/setup/getting-started/) documentation and follow the guide step by step
 
 ## Prerequisites
 - [X] download the latest release of istio
@@ -31,7 +31,7 @@ This directory provides an `istio-manifests` files containing ingress resources 
 
 ![app-pods](../images/app-pods.png)   
 
-> I use ![`lens`](https://k8slens.dev/) to provide a powerful and intuitive way to view and manage our Kubernetes clusters
+> I use [`lens`](https://k8slens.dev/) to provide a powerful and intuitive way to view and manage our Kubernetes clusters
 
 ## Install Kiali and the other addons 
 
