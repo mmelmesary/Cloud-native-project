@@ -4,7 +4,7 @@ What follows is a step-by-step guide on configuring the KEDA ScaledObject to get
 
 Prometheus scaler in KEDA is configured and deployed to auto-scale.
 
-> Autoscaling is an approach to automatically scale up or down workloads based on the resource usage.
+> Autoscaling is an approach to automatically scale up or down workloads based on resource usage.
 
 ![keda](../images/keda.PNG) 
 
@@ -18,7 +18,7 @@ We will deploy Keda using Helm provided by ArgoCD
 
 `ScaledObject` is a custom resource that needs to be deployed in order to sync a `Deployment` with an event source (Prometheus in this case).
 
- The `ScaledObject` will result in corresponding autoscaling resource (HPA definition) to scale the `Deployment`.
+ The `ScaledObject` will result in a corresponding autoscaling resource (HPA definition) to scale the `Deployment`.
 
  > When a ScaledObject gets deleted, the corresponding HPA definition is cleaned up.
 
