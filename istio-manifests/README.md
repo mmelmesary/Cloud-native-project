@@ -15,14 +15,14 @@ This directory provides an `istio-manifests` files containing ingress resources 
   istioctl install --set profile=demo -y
   ```
 
-1. Add a namespace label to instruct Istio to automatically inject Envoy sidecar proxies when you deploy your application later
+2. Add a namespace label to instruct Istio to automatically inject Envoy sidecar proxies when you deploy your application later
 
   ```bash
   kubectl label namespace app-system istio-injection=enabled
   ```
 > `note:`choose the namespace that you will deploy your app on it
 
-1. Deploy your app
+3. Deploy your app
 
 **we utilize ArgoCD as the deployment tool for our app.** you can see the application file from **[shopping-website](../ArgoCD/app-of-apps/shopping-website.yaml)** in ArgoCD directory.
 
