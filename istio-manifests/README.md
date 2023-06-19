@@ -24,7 +24,7 @@ This directory provides an `istio-manifests` files containing ingress resources 
 
 3. Deploy your app
 
-**we utilize ArgoCD as the deployment tool for our app.** you can see the application file from **[shopping-website](../ArgoCD/app-of-apps/shopping-website.yaml)** in ArgoCD directory.
+  **we utilize ArgoCD as the deployment tool for our app.** you can see the application file from **[shopping-website](../ArgoCD/app-of-apps/shopping-website.yaml)** in ArgoCD directory.
 
  Run `kubectl get pods` to see pods are in a healthy and ready state.
 
