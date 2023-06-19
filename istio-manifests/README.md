@@ -25,9 +25,9 @@ This directory provides an `istio-manifests` files containing ingress resources 
 
 **we utilize ArgoCD as the deployment tool for our app.** you can see the application file from **[shopping-website](../ArgoCD/app-of-apps/shopping-website.yaml)** in ArgoCD directory.
 
-1. Run `kubectl get pods` to see pods are in a healthy and ready state.
+ Run `kubectl get pods` to see pods are in a healthy and ready state.
 
- > you should see that each pod has `two containers` up and running 
+ > 🔎 Each pod has `2 containers`, because each pod now has the injected Istio sidecar proxy. 
 
 ![app-pods](../images/app-pods.png)   
 
