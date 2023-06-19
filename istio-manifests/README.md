@@ -8,6 +8,7 @@ This directory provides an `istio-manifests` files containing ingress resources 
 - [X] download the latest release of istio
 
 ## Step 1: Install Istio
+
 1. we use the demo configuration profile
 
   ```bash
