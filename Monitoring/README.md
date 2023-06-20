@@ -1,8 +1,8 @@
-# Use Prometheus for monitoring and grafana for virtualiztion
+# Use Prometheus for monitoring and Grafana for virtualization
 
 ![prometheus](../images/prometheus-logo.svg)           ![Grafana](../images/grafana-logo.png)
 
-**we utilize ArgoCD as the deployment tool for our Prometheus stack. This is achieved by utilizing the Helm chart implementation.** you can see the application file from **[kube-prometheus-stack](../ArgoCD/app-of-apps/prometheus-stack.yaml)** in ArgoCD directory.
+**We utilize ArgoCD as the deployment tool for our Prometheus stack. This is achieved by utilizing the Helm chart implementation.** you can see the application file from **[kube-prometheus-stack](../ArgoCD/app-of-apps/prometheus-stack.yaml)** in ArgoCD directory.
 
 #### By default, this chart will deploy the following components:
 - Prometheus server
@@ -17,12 +17,19 @@
 ```bash
 kubectl get pods -n monitoring 
 ```
-## Step1: Accessing prometheus UI & grafana UI
+
+```
+NAME                                                   READY   STATUS    RESTARTS   AGE
+monitoring-kube-prometheus-operator-774d4579f6-khjv8   1/1     Running   0          20m
+monitoring-kube-state-metrics-6cd9475767-ll7q4         1/1     Running   0          20m
+monitoring-prometheus-node-exporter-9pn6z              1/1     Running   0          20m
+```
+## Step1: Accessing prometheus UI & Grafana UI
 #### To access the prometheus UI
   ```bash
   kubectl -n monitoring port-forward svc/monitoring-kube-prometheus-prometheus  9090:9090
   ``` 
-#### To access the grafana UI
+#### To access the Grafana UI
 
   ```bash
   kubectl -n monitoring port-forward svc/monitoring-grafana 3000:80
@@ -33,7 +40,7 @@ kubectl get pods -n monitoring
   kubectl get secret -n monitoring monitoring-grafana -o=jsonpath='{.data.admin-user}' | base64 -d
   kubectl get secret -n monitoring monitoring-grafana -o=jsonpath='{.data.admin-password}' | base64 -d
   ```
-![prometheus](../images/grafana-dashboard.png)    
+![Grafana](../images/grafana-dashboard.png)    
 
 ## Step2: Creating custom roles 🚨
 
