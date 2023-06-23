@@ -33,9 +33,8 @@ We have utilized Istio to provide advanced traffic management and security featu
 
 > The [`KEDA`](./KEDA/) directory contains instructions for using it.
 
-
-
-#### This repository contains code for my DevOps project, which utilizes multiple tools to achieve a variety of tasks. To learn more about each tool and how it contributes to the project, please see the README file in each directory:
+___
+####  To learn more about each tool and how it contributes to the project, please see the README file in each directory:
 
 - [Terraform](./Terraform/README.md)
 - [ArgoCD](./ArgoCD/README.md)
