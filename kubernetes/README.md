@@ -26,4 +26,4 @@ kubectl get svc frontend-external -o jsonpath="{.status.loadBalancer.ingress[0].
 
 ___
 
-we also create the **PeerAuthentication** resource in the Istio service mesh. that enforces `mTLS` authentication between services within the "app-system" namespace. This policy ensures that only authenticated and authorized services within the same namespace can communicate with each other, thereby preventing unauthorized access and DoS attacks from external services, So check the file `authentication.yaml`
+we also create the **PeerAuthentication** resource in the Istio service mesh. that enforces `mTLS` authentication between services within the "app-system" namespace. This policy ensures that only authenticated and authorized services within the same namespace can communicate with each other, thereby preventing unauthorized access and DoS attacks from external services, So check the file [authentication.yaml](authentication.yaml)
