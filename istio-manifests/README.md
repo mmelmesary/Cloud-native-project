@@ -60,3 +60,10 @@ This directory provides an `istio-manifests` files containing ingress resources 
 Starting in Istio 1.5, the default Istio mTLS behavior is "auto." This means that pod-to-pod traffic will use mutual TLS by default, but pods will still accept plain-text traffic for instance, from pods in a different namespaces that are not injected with the Istio proxy. Because we deployed the entire sample app into one namespace `app-system` and all pods have the Istio sidecar proxy, traffic will be mTLS for all the sample app workloads. Let's look at this behavior.
 
 ![kiali-graph](../images/kiali2.png)
+
+___
+## Enable mTLS for the app-system namespace
+
+we also create the **`PeerAuthentication`** resource in the Istio service mesh. that enforces `mTLS` authentication between services within the "app-system" namespace. This policy ensures that only authenticated and authorized services within the same namespace can communicate with each other, thereby preventing unauthorized access and DoS attacks from external  
+
+Open `[authentication.yaml](./authentication.yaml)`.
