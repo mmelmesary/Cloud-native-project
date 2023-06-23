@@ -30,7 +30,7 @@ This repository contains code for my DevOps project, which utilizes multiple too
 - [Istio](./Istio%20manifests/README.md)
 - [K8s-manifest](./kubernetes/README.md)
 - [KEDA](./KEDA/README.md)
-- [Kubeseal]()
+- [Kubeseal](https://github.com/mmelmesary/DevOps-Project/tree/master/Monitoring#step-2)
 
 
 
