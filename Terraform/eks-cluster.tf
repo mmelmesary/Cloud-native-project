@@ -1,9 +1,6 @@
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
   version = "19.13.1"
-  cluster_addons = { coredns = { most_recent = true } 
-  kube-proxy = { most_recent = true } 
-  vpc-cni = { most_recent = true } }
   cluster_name                   = var.cluster_name
   cluster_version                = var.cluster_version
   vpc_id                         = module.vpc.vpc_id
@@ -13,28 +10,18 @@ module "eks" {
   create_cloudwatch_log_group    = false
   tags = {
 
-    environment = "Production"
+    environment = var.env_perfix
   }
 
   eks_managed_node_groups = {
     one = {
-      name = "node-group-1"
+      name = var.node_name
 
-      instance_types = ["t3.medium"]
+      instance_types = var.node_type
 
       min_size     = 2
       max_size     = 3
       desired_size = 3
-    }
-
-    two = {
-      name = "node-group-2"
-
-      instance_types = ["t3.small"]
-
-      min_size     = 2
-      max_size     = 3
-      desired_size = 2
     }
   }
 }

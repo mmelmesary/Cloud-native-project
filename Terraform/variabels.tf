@@ -1,6 +1,7 @@
 variable "region" {
   type        = string
   description = "The AWS region for the provider to deploy resources into."
+  default = "us-east-1"
 }
 
 
@@ -24,7 +25,21 @@ variable "cluster_name" {
   description = "the name of our eks cluster"
 }
 
+variable "env_perfix" {
+ type = string
+ default = "dev"
+}
+
 variable "cluster_version" {
   type        = string
   description = "the version of our k8s cluster"
+}
+
+variable "node_type" {
+  type = list(string)
+  default = ["t3.small"]
+}
+variable "node_name" {
+  type = string
+  description = "node group name"
 }
