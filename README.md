@@ -1,4 +1,4 @@
- # DevOps Project 
+ # Cloud-native microservices Project 
 
 - **Our project is a cloud-native microservices-based application that is designed to run on Amazon Web Services (AWS) using Elastic Kubernetes Service (EKS). We use Terraform to manage our infrastructure as code, Istio to provide advanced traffic management and security features for our microservices, Prometheus and Grafana to monitor our distributed systems, and ArgoCD to manage our continuous delivery pipelines. By using these cloud-native technologies, we can take full advantage of the scalability, resilience, and elasticity of the cloud.**
 ______
